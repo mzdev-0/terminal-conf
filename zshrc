@@ -52,7 +52,6 @@ alias find='fd'
 
 alias burppro='/home/$USER/bin/burppro.sh'
 alias zed='zeditor'
-alias thunar='yazi'
 
 export EDITOR=nvim
 
@@ -80,7 +79,8 @@ RPROMPT='%F{#4A42AE}[%f%F{#00ff9f}%w%f %F{#00b8ff}- %f%F{#00ff9f}%@%F{#4A42AE}]%
 
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/cas/apps/google-cloud-sdk/path.zsh.inc' ]; then . '/home/cas/apps/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/home/cas/google-cloud-sdk/path.zsh.inc' ]; then . '/home/cas/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/cas/apps/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/cas/apps/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/home/cas/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/cas/google-cloud-sdk/completion.zsh.inc'; fi
+eval "$(atuin init zsh --disable-up-arrow)"
