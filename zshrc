@@ -20,7 +20,6 @@ plugins=(
     zsh-syntax-highlighting
     direnv
 )
-source ~/.env
 source $ZSH/oh-my-zsh.sh
 
 
@@ -32,6 +31,11 @@ fi
 
 
 export PATH=$PATH:/usr/sbin:/home/$USER/bin:/home/$USER/go/bin:/home/$USER/.cargo/bin:/home/cas/.local/bin
+
+#aws completion
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
+complete -c '/usr/local/bin/aws_completer' aws
 
 
 
